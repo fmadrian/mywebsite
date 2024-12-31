@@ -6,7 +6,8 @@ export const EXTERNAL_URLS = {
     github_repositories: {
         all: `https://github.com/${GITHUB_USERNAME}?tab=repositories`,
         budget: `https://github.com/${GITHUB_USERNAME}/budget`,
-        reslide: `https://github.com/${GITHUB_USERNAME}/reslide`,
+        reslide: `https://github.com/${GITHUB_USERNAME}/webpointofsale`,
+        florarte: `https://github.com/${GITHUB_USERNAME}/florarte`,
         transferplaylists: `https://github.com/${GITHUB_USERNAME}/transfer-playlists`,
         auctions: `https://github.com/${GITHUB_USERNAME}/auctions`,
     },
@@ -36,7 +37,14 @@ export const APP_STRINGS = {
  */
 export const USER_PROJECTS = [
     {
-        name: 'Reslide (Web point of sale)',
+        name: 'FlorArte (Product and order management web application)',
+        description: 'Product and order management web application made with Spring Boot and Next.js.',
+        reason: 'Web application for a flower shop that allows administrator users to manage a product (flowers) catalog, categories, tags, and orders. It also allows customers to browser through this catalog and place orders.',
+        link: EXTERNAL_URLS.github_repositories.florarte,
+        image: '/assets/images/projects/florarte/1.webp'
+    },
+    {
+        name: 'Web point of sale',
         description: 'Web point of sale made with Spring Boot and Angular.',
         reason: 'Web point of sale that allows its users to manage the information of clients, providers, users, products, invoices, orders to distributors.',
         link: EXTERNAL_URLS.github_repositories.reslide,
@@ -62,7 +70,7 @@ export const USER_PROJECTS = [
         reason: 'Personal budget manager that allows its users to: create and edit budgets (reports) where users can include their income and expenses, use previous reports created as templates, and compare multiple budgets (reports) and each one of their items by using a comparison table and a bar chart.',
         link: EXTERNAL_URLS.github_repositories.budget,
         image: '/assets/images/projects/budget/1.webp'
-    },
+    }
 
 ]
 /**
@@ -71,7 +79,9 @@ export const USER_PROJECTS = [
 export const USER_TOOLS = [
     { name: 'C#' },
     { name: 'JavaScript' },
+    { name: 'TypeScript' },
     { name: 'Angular' },
+    { name: 'Next.js' },
     { name: 'Vue' },
     { name: 'Python' },
     { name: 'SQL' },
